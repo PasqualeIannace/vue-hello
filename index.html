@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div id="app">
+       <h1>{{ message }}</h1>
+       <p>Cambia qui il messaggio di benvenuto!</p>
+       <input type="text" v-model="message"> 
+       <br>
+       <br>
+       <img :src="immagine" alt="">
+       <p>Cambia la foto!</p>
+       <input type="text" v-model="immagine"> 
+    </div>
+
     
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./js/main.js"></script>
